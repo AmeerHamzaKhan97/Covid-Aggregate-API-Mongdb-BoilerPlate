@@ -1,186 +1,216 @@
 
-const data =
-    [[
-        "Maharashtra",
-        1763055,
-        1635971,
-        79738,
-        46356],
-    [
-        "Karnataka",
-        867780,
-        830988,
-        25169,
-        11604],
-    [
-        "Andhra Pradesh",
-        858711,
-        835801,
-        16000,
-        6910],
-    [
-        "Tamil Nadu",
-        764989,
-        739532,
-        13907,
-        11550],
-    ["Kerala",
-        545642,
-        475320,
-        68234,
-        1970],
-    ["Uttar Pradesh",
-        519148,
-        488911,
-        22757,
-        7480,],
-    ["Delhi",
-        510630,
-        459368,
-        43221,
-        8041],
-    ["West Bengal",
-        445505,
-        411759,
-        25873,
-        7873,],
-    ["Odisha",
-        311788,
-        302796,
-        7347,
-        1645,],
-    ["Telangana",
-        260834,
-        246733,
-        12682,
-        1419,],
-    ["Rajasthan",
-        234907,
-        212623,
-        20168,
-        2116,],
-    ["Bihar",
-        229474,
-        222492,
-        5772,
-        1209,],
-    ["Chhattisgarh",
-        217562,
-        195469,
-        19421,
-        2672,],
-    ["Assam",
-        211040,
-        206875,
-        3192,
-        970,],
-    ["Haryana",
-        209251,
-        187559,
-        19579,
-        2113],
-    ["Gujarat",
-        192982,
-        176575,
-        12577,
-        3830],
-    ["Madhya Pradesh",
-        188018,
-        175089,
-        9800,
-        3129],
-    ["Punjab",
-        144177,
-        133427,
-        6194,
-        4556],
-    ["Jharkhand",
-        106972,
-        103435,
-        2600,
-        937,],
-    ["Jammu and Kashmir",
-        104715,
-        97537,
-        5560,
-        1618,],
-    ["Uttarakhand",
-        69693,
-        63808,
-        4132,
-        1134,],
-    ["Goa",
-        46480,
-        44467,
-        1343,
-        670],
-    ["Puducherry",
-        36533,
-        35254,
-        670,
-        609], ["Tripura",
-        32214,
-        30833,
-        997,
-        361],
-    ["Himachal Pradesh",
-        32197,
-        24706,
-        6978,
-        480],
-    ["Manipur",
-        22548,
-        19431,
-        2886,
-        231],
-    ["Chandigarh",
-        16322,
-        14963,
-        1105,
-        254],
-    ["Arunachal Pradesh",
-        15976,
-        14800,
-        1127,
-        49],
-    ["Meghalaya",
-        10979,
-        10074,
-        798,
-        104],
-    ["Nagaland",
-        10460,
-        9007,
-        1292,
-        54],
-    ["Ladakh",
-        7714,
-        6619,
-        1000,
-        95],
-    ["Sikkim",
-        4610,
-        4134,
-        297,
-        95],
-    ["Andaman and Nicobar Islands",
-        4604,
-        4398,
-        145,
-        61],
-    ["Mizoram",
-        3513,
-        3025,
-        483,
-        5],
-    ["Dadra and Nagar Haveli and Daman and Diu",
-        3302,
-        3237,
-        34,
-        2]
-    ]
-const newData = []
-for (let i = 0; i < data.length; i++)
-    newData.push({ state: data[i][0], infected: data[i][1], recovered: data[i][2], death: data[i][4] })
+const data = [
+    {
+        state: 'Maharashtra',
+        infected: 1763055,
+        recovered: 1635971,
+        death: 46356
+    },
+    {
+        state: 'Karnataka',
+        infected: 867780,
+        recovered: 830988,
+        death: 11604
+    },
+    {
+        state: 'Andhra Pradesh',
+        infected: 858711,
+        recovered: 835801,
+        death: 6910
+    },
+    {
+        state: 'Tamil Nadu',
+        infected: 764989,
+        recovered: 739532,
+        death: 11550
+    },
+    {
+        state: 'Kerala',
+        infected: 545642,
+        recovered: 475320,
+        death: 1970
+    },
+    {
+        state: 'Uttar Pradesh',
+        infected: 519148,
+        recovered: 488911,
+        death: 7480
+    },
+    {
+        state: 'Delhi',
+        infected: 510630,
+        recovered: 459368,
+        death: 8041
+    },
+    {
+        state: 'West Bengal',
+        infected: 445505,
+        recovered: 411759,
+        death: 7873
+    },
+    {
+        state: 'Odisha',
+        infected: 311788,
+        recovered: 302796,
+        death: 1645
+    },
+    {
+        state: 'Telangana',
+        infected: 260834,
+        recovered: 246733,
+        death: 1419
+    },
+    {
+        state: 'Rajasthan',
+        infected: 234907,
+        recovered: 212623,
+        death: 2116
+    },
+    {
+        state: 'Bihar',
+        infected: 229474,
+        recovered: 222492,
+        death: 1209
+    },
+    {
+        state: 'Chhattisgarh',
+        infected: 217562,
+        recovered: 195469,
+        death: 2672
+    },
+    {
+        state: 'Assam',
+        infected: 211040,
+        recovered: 206875,
+        death: 970
+    },
+    {
+        state: 'Haryana',
+        infected: 209251,
+        recovered: 187559,
+        death: 2113
+    },
+    {
+        state: 'Gujarat',
+        infected: 192982,
+        recovered: 176575,
+        death: 3830
+    },
+    {
+        state: 'Madhya Pradesh',
+        infected: 188018,
+        recovered: 175089,
+        death: 3129
+    },
+    {
+        state: 'Punjab',
+        infected: 144177,
+        recovered: 133427,
+        death: 4556
+    },
+    {
+        state: 'Jharkhand',
+        infected: 106972,
+        recovered: 103435,
+        death: 937
+    },
+    {
+        state: 'Jammu and Kashmir',
+        infected: 104715,
+        recovered: 97537,
+        death: 1618
+    },
+    {
+        state: 'Uttarakhand',
+        infected: 69693,
+        recovered: 63808,
+        death: 1134
+    },
+    {
+        state: 'Goa',
+        infected: 46480,
+        recovered: 44467,
+        death: 670
+    },
+    {
+        state: 'Puducherry',
+        infected: 36533,
+        recovered: 35254,
+        death: 609
+    },
+    {
+        state: 'Tripura',
+        infected: 32214,
+        recovered: 30833,
+        death: 361
+    },
+    {
+        state: 'Himachal Pradesh',
+        infected: 32197,
+        recovered: 24706,
+        death: 480
+    },
+    {
+        state: 'Manipur',
+        infected: 22548,
+        recovered: 19431,
 
-exports.data = newData;
+        death: 231
+    },
+    {
+        state: 'Chandigarh',
+        infected: 16322,
+        recovered: 14963,
+        death: 254
+    },
+    {
+        state: 'Arunachal Pradesh',
+        infected: 15976,
+        recovered: 14800,
+        death: 49
+    },
+    {
+        state: 'Meghalaya',
+        infected: 10979,
+        recovered: 10074,
+        death: 104
+    },
+    {
+        state: 'Nagaland',
+        infected: 10460,
+        recovered: 9007,
+        death: 54
+    },
+    {
+        state: 'Ladakh',
+        infected: 7714,
+        recovered: 6619,
+        death: 95
+    },
+    {
+        state: 'Sikkim',
+        infected: 4610,
+        recovered: 4134,
+        death: 95
+    },
+    {
+        state: 'Andaman and Nicobar Islands',
+        infected: 4604,
+        recovered: 4398,
+        death: 61
+    },
+    {
+        state: 'Mizoram',
+        infected: 3513,
+        recovered: 3025,
+        death: 5
+    },
+    {
+        state: 'Dadra and Nagar Haveli and Daman and Diu',
+        infected: 3302,
+        recovered: 3237,
+        death: 2
+    }
+]
+// console.log(data)
+exports.data = data;
