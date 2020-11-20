@@ -1,7 +1,7 @@
 
 const mongodb = require('mongodb');
 
-const mongoURI = "mongodb://localhost:27017" + "/covidtally"
+const mongoURI = "mongo://localhost:27017" + "/covidtally"
 
 let mongoose = require('mongoose');
 const { tallySchema } = require('./schema')
