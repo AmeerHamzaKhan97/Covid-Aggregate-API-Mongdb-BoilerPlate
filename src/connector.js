@@ -1,5 +1,5 @@
 
-const mongodb = require('mongodb');
+//const mongodb = require('mongodb');
 
 const mongoURI = "mongodb://mongoService:27017" + "/covidtally"
 
