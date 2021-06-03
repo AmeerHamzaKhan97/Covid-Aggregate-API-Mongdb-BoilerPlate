@@ -2,7 +2,7 @@
 //const mongodb = require('mongodb');
 
 const mongoURI =
-  "mongodb+srv://ameerkhan:7208270296@cluster0.vvkuk.mongodb.net/newtonDB" +
+  "mongodb+srv://(username):(password)@cluster0.vvkuk.mongodb.net/(databasename)" +
   "covidtally";
 
 let mongoose = require('mongoose');
