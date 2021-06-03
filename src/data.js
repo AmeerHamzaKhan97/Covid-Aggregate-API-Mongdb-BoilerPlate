@@ -144,6 +144,9 @@ const data = [
         recovered: 30833,
         death: 361
     },
+
+
+
     {
         state: 'Himachal Pradesh',
         infected: 32197,

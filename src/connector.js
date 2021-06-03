@@ -1,7 +1,9 @@
 
 //const mongodb = require('mongodb');
 
-const mongoURI = "mongodb://localhost:27017" + "/covidtally"
+const mongoURI =
+  "mongodb+srv://ameerkhan:7208270296@cluster0.vvkuk.mongodb.net/newtonDB" +
+  "covidtally";
 
 let mongoose = require('mongoose');
 const { tallySchema } = require('./schema')
